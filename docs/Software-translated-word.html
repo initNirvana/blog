@@ -106,7 +106,7 @@
 <ol style="list-style-type: decimal">
 <li>심볼(symbol) : 심볼은 의미 그대로 한다면 기호다. 튜링기계에서는 알파벳 26개를 기반한 문자집합을 말한다. 기호로 번역한다면 그 의미는 어떻게 되는가? 튜링기계의 헤드도 마찬가지다. 누가 헤드를 머리로 번역할까[^1].</li>
 <li>accepting state : 오토마타에서 받아들이는 상태, 수용상태 둘 중에 하나를 쓰고 있는 상황이다. 옛날 책을 보면 수용 상태. 위키백과는 받아들이는 상태가 보인다.</li>
-<li>linear bound automata : 선형 유한 오토마타. 안에 들어간 의미를 포함하는 단어를 만드는건 정말 어렵다. linear bound automata는 pushdown automaton과 같이 비결정적으로 동작할 수 있지만, 보조 테이프를 갖추고 있지 않다. 대신, 유한 오토마톤처럼 단일 메인 테이프를 갖는다. 하지만 선형 한정 오토마톤은 테이프에 읽기/쓰기가 모두 허용된다. 선형 한정 오토마톤은 다른 방향으로 이동할 수 없다는 것이 단점이다. 이런 내용은 영어단어도 의미를 포괄하지 못한다.</li>
+<li>linear bound automata : 선형 유한 오토마타. 안에 들어간 의미를 포함하는 단어를 만드는건 정말 어렵다. linear bound automata는 pushdown automaton과 같이 비결정적으로 동작할 수 있지만, 보조 테이프를 갖추고 있지 않다. 대신, 유한 오토마톤처럼 단일 메인 테이프를 갖는다. 하지만 linear bound automata은 테이프에 읽기/쓰기가 모두 허용된다. linear bound automata은 다른 방향으로 이동할 수 없다는 것이 단점이다. 이런 내용은 영어단어도 의미를 포괄하지 못한다.</li>
 <li>Convex-hull : 컨벡스 헐, 알고리즘 문제 풀이를 할때 자주 볼 수 있을 것이다. 볼록껍질 의미는 맞다. 정말 해야할까?</li>
 <li>word problem : 이것을 검색해보면 수학에서 말하는 문장 문제(혹은 문장제)가 나온다. 그러나 컴퓨터 과학에서 말하는 word problem은 다르다. 단어 문제라고 해야할 것이다.</li>
 <li>withness : 위키백과에서는 증거, <a href="http://www.yes24.com/24/Goods/17242644?Acode=101">친절한 수론 길라잡이</a>에서는 증인으로 사용한다. n이 합성수일때 $ {1, 2, 3, … , n-1} $ 절반 이상이 withness를 가지고 있다. 라는 미하엘 라빈의 정의를 본다면 증거 혹은 증인이 맞아 보인다.</li>
@@ -121,6 +121,10 @@
 <div id="eab2b0eba1a0" class="section level3 unnumbered">
 <h3>결론</h3>
 <p>과거로 돌아가서 번역할때 한자 쓰지말자고 하기에는 타임머신이 개발되지 않았다. 과거의 한자용어의 익숙함도 문제지만 한글로 번역하면 의미가 한 글자로 압축되어 있는 한자보다 긴 단어가 될 가능성이 있다. 한글의 표현 한계에도 금방 부딪힐 것이다.</p>
+<div class="figure">
+<img src="http://i.imgur.com/pPdPdaC.png" alt="이정도로 빈약할 줄은 몰랐어" />
+<p class="caption">이정도로 빈약할 줄은 몰랐어</p>
+</div>
 <p>요약하면 쉽게 읽히기 위한 글(번역)을 쓰기 위해선 어느정도 용어를 번역해야 한다. 초보자를 대상으로 하는 책은 더더욱 용어를 번역해야한다. 위키백과는 참고는 할만하지만 번역용어 제시 사이트로는 좋지 못한 상태다. 한국어 웹 문서는 빈약하다.</p>
 <p>[^1] : 위키백과 튜링 기계 <a href="https://ko.wikipedia.org/wiki/%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84">https://ko.wikipedia.org/wiki/%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84</a></p>
 <p>[^2] : CS 언플러그드 <a href="http://www.playsw.or.kr/repo/cs_unplugged/379" class="uri">http://www.playsw.or.kr/repo/cs_unplugged/379</a></p>
