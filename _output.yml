@@ -1,14 +1,14 @@
 bookdown::gitbook:
-  css: style.css
   config:
     toc:
       collapse: section 
-      before: |
+      before: | 
         <li><strong><a href="./">해탈 블로그</a></strong></li>
     edit:
       link: https://gihub.com/initNirvana/edit/master/%s
       text: "Edit"
     sharing: no
-    toc_depth: 3
-    toc_unnumbered: no
-    split_by: section
+  css: style.css
+  toc_depth: 3
+  toc_unnumbered: no
+  split_by: section

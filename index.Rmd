@@ -1,5 +1,5 @@
 --- 
-title: "해탈 블로그"
+# title: "해탈 블로그"
 author: "Nirvana"
 #date: "`r Sys.Date()`"
 description: "(blank)"
