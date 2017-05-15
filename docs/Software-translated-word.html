@@ -109,11 +109,11 @@
 <li>linear bound automata : 선형 유한 오토마타. 단어의 의미를 포함하는 단어를 만드는건 정말 어렵다. linear bound automata는 pushdown automaton과 같이 비결정적으로 동작할 수 있지만, 보조 테이프를 갖추고 있지 않다. 대신, 유한 오토마톤처럼 단일 메인 테이프를 갖는다. 하지만 linear bound automata은 테이프에 읽기/쓰기가 모두 허용된다. linear bound automata은 다른 방향으로 이동할 수 없다는 것이 단점이다. 이런 내용은 영어단어도 의미를 포괄하지 못한다.</li>
 <li>Convex-hull : 컨벡스 헐, 알고리즘 문제 풀이를 할때 자주 볼 수 있을 것이다. 볼록껍질 의미는 맞다. 정말 볼록껍질로 해야할까?</li>
 <li>word problem : 구글에 검색해보면 수학에서 말하는 문장 문제(혹은 문장제)가 나온다. 그러나 컴퓨터 과학에서 말하는 word problem은 다르다. 단어 문제라고 해야할 것이다.</li>
-<li>withness : 위키백과에서는 증거, <a href="http://www.yes24.com/24/Goods/17242644?Acode=101">친절한 수론 길라잡이</a>에서는 증인으로 사용한다. n이 합성수일때 $ {1, 2, 3, … , n-1} $ 절반 이상이 withness를 가지고 있다. 라는 미하엘 라빈의 정의를 본다면 증거 혹은 증인이 맞아 보인다.</li>
+<li>withness : 위키백과에서는 증거, <a href="http://www.yes24.com/24/Goods/17242644?Acode=101">친절한 수론 길라잡이</a>에서는 증인으로 사용한다. n이 합성수일때 <span class="math inline">\({1, 2, 3, … , n-1}\)</span> 절반 이상이 withness를 가지고 있다. 라는 미하엘 라빈의 정의를 본다면 증거 혹은 증인이 맞아 보인다.</li>
 <li>minima : 수학용어에서는 극소다. 다만 스타이너 트리를 찾는 아날로그 방법인 비눗방울 방법[^2]으로 하는데 극소를 쓴다? 그건 아닐것이다.</li>
 <li>list comprehensions : 리스트 해석, 리스트 조건제시법, 어느정도 해당하는 말일 수 있다. 하지만 다양하게 사용되는 컴프리헨션에 대응이 될 수 없다. 음차로 쓰는것을 추천한다.</li>
 </ol>
-<p>사실 이렇게 엉망인 이유는 하나 더 있는데, 컴퓨터과학에는 수학의 개념을 차용한 개념들이 많이 있다. 처음에 링크한 parameter와 매개변수를 비교했는데, 문제가 조금 복잡하다. 사실 매개변수는 수학 용어에서 왔기때문이다[^3][^4]. 그리고 invariant와 immutable 는 둘다 수학에서 불변이라는 의미다. argument는 수학에서 편각, 변수로 쓰고 있다. 반면 컴퓨터 과학용어로 번역을 했을때는 인수로 쓰고 있다. parameter와 argument의 차이를 설명한 인용을 보도록 하자.</p>
+<p>사실 이렇게 엉망인 이유는 하나 더 있는데, 컴퓨터과학에는 수학의 개념을 차용한 개념들이 많이 있다. 처음에 링크한 글에는 parameter와 매개변수를 비교했는데, 문제가 조금 복잡하다. 사실 매개변수는 수학 용어에서 왔기때문이다[^3][^4]. 그리고 invariant와 immutable 는 둘다 수학에서 불변이라는 의미다. argument는 수학에서 편각, 변수로 쓰고 있다. 반면 컴퓨터 과학용어로 번역을 했을때는 인수로 쓰고 있다. parameter와 argument의 차이를 설명한 인용을 보도록 하자.</p>
 <blockquote>
 <p>We well generally use parameter for a variable named in the parenthesized list in a function definition, and argument for the value used in a call of the function. - K&amp;R, C Programming Language (2nd Edition), p.25</p>
 </blockquote>
@@ -169,6 +169,17 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
