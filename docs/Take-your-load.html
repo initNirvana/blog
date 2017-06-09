@@ -95,25 +95,25 @@
 <div id="Take-your-load" class="section level1">
 <h1><span class="header-section-number">2</span> load를 불러오시겠습니까?</h1>
 <p>2017 june</p>
-<p>예전에 TAOCP 1권의 MMIX 부분을 읽고 있던 중 <em>적재(load)</em>라는 단어를 보게 되었다. LDA는 알고 있었으나 Load라는 단어의 뜻은 불러오기밖에 몰랐었다.</p>
+<p>예전에 TAOCP 1권의 MMIX 부분을 읽고 있던 중 <b>적재(load)</b>라는 단어를 보게 되었다. LDA는 알고 있었으나 Load라는 단어의 뜻은 불러오기밖에 몰랐었다.</p>
 <p>일단 TAOCP 1권에서 LDA를 설명하는 인용<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a>을 보도록 하자.</p>
 <blockquote>
 <p>LDA (load A; A에 적재). C = 8; F = 필드</p>
 </blockquote>
 <blockquote>
-<p>CONTENTS(M)의 지정된 필드로 레지스터 A의 이전 내용을 대체 한다. <br/> 부분 필드가 입력으로 쓰이는 모든 명령에서, 필드 자체에 부호가 포함되어 있으면 그 부호가 쓰이고, 그렇지 않으면 부호는 +로 간주된다. 레지스터에 <em>적재</em>될 때, 필드는 그 오른쪽 끝이 레지스터의 오른쪽 끝에 일치하도록 적절히 이동된다.</p>
+<p>CONTENTS(M)의 지정된 필드로 레지스터 A의 이전 내용을 대체 한다. <br/> 부분 필드가 입력으로 쓰이는 모든 명령에서, 필드 자체에 부호가 포함되어 있으면 그 부호가 쓰이고, 그렇지 않으면 부호는 +로 간주된다. 레지스터에 <strong>적재</strong>될 때, 필드는 그 오른쪽 끝이 레지스터의 오른쪽 끝에 일치하도록 적절히 이동된다.</p>
 </blockquote>
 <p>이해하기 어렵다. 책의 예제를 보자.</p>
 <blockquote>
-<p>예 : F가 정규 필드 명세 (0:5)이면 장소 M의 모든 내용이 rA에 복사된다. F가 (1:5)이면 CONTENTS(M)의 절대값이 부호 +와 함께 적재된다. M에 어떤 명령 워드가 들어 있으며 F가 (0:2)이면 그 “±AA 필드”가 A에 다음과 같이 <em>적재</em>된다. [±000AA]</p>
+<p>예 : F가 정규 필드 명세 (0:5)이면 장소 M의 모든 내용이 rA에 복사된다. F가 (1:5)이면 CONTENTS(M)의 절대값이 부호 +와 함께 적재된다. M에 어떤 명령 워드가 들어 있으며 F가 (0:2)이면 그 “±AA 필드”가 A에 다음과 같이 <strong>적재</strong>된다. [±000AA]</p>
 </blockquote>
 <p>이번엔 다른 책<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a>을 보자.</p>
 <blockquote>
-<p>LOAD : 기억장치로부터 데이터를 읽어서 누산기(AC)에 <em>적재</em></p>
+<p>LOAD : 기억장치로부터 데이터를 읽어서 누산기(AC)에 <strong>적재</strong></p>
 </blockquote>
 <p>또 다른 책<a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a>을 보자.</p>
 <blockquote>
-<p>명령어 LDA | LDA B | 피연산자의 자료 B(주소 B의 자료)를 레지스터에 <em>가져오는</em> 명령어</p>
+<p>명령어 LDA | LDA B | 피연산자의 자료 B(주소 B의 자료)를 레지스터에 <strong>가져오는</strong> 명령어</p>
 </blockquote>
 <p>뭔가 조금 다르다. 같은 LDA가 맞는지 혼란스럽다. 다른 책 알아보는건 그만두고, 영문을 보자.</p>
 <p>LDA X : Load the AC with the contents of memory address X.</p>
@@ -131,10 +131,10 @@
 </ol>
 <p>첫번째 주기에서는 명령어 레지스터 IR에 loaded한 명령어의 오퍼랜드인 주소(addr)를 MAR을 통하여 기억장치로 보낸다. 두번째 주기에는 주소가 지정하는 기억장소로부터 데이터를 인출하여 MBR에 저장하며, 그 데이터를 세번째 주기에서 AC 레지스터에 load함으로써 LOAD 명령어의 실행이 완료된다.</p>
 <p>load(or loaded)를 적재나 불러오기로 읽어보라.</p>
-<p>이번엔 다른 예문을 보자. 메모리 주소 X의 내용을 언급할때는, 주소가 X인 메모리 워드에 현재 저장된 정수를 말한다. AC에 메모리 주소 X의 내용을 간접적으로 <em>적재한다는</em> 의미는, 주소 X의 내용을 <em>적재하는 것이</em> 아닌(내용(contents)가 <em>적재됬을때</em>) 다른 주소의 내용으로 처리한다는 것을 의미한다.</p>
-<p><strong>적재</strong> 를 <strong>불러온다</strong> 로 바꿔보자.</p>
-<p>AC에 메모리 주소 X의 내용을 간접적으로 <em>불러온다는</em> 의미는, 주소 X의 내용을 <em>불러오는</em> 것이 아닌(내용(contents)을<em>불러왔을때</em>) 다른 주소의 내용으로 처리한다는 것을 의미한다.</p>
-<p>불러왔다는 의미보다는 <strong>적재</strong> 라는 의미가 더 적절하다.</p>
+<p>이번엔 다른 예문을 보자. 메모리 주소 X의 내용을 언급할때는, 주소가 X인 메모리 워드에 현재 저장된 정수를 말한다. AC에 메모리 주소 X의 내용을 간접적으로 <strong>적재한다는</strong> 의미는, 주소 X의 내용을 <strong>적재하는 것이</strong> 아닌(내용(contents)가 <strong>적재됬을때</strong>) 다른 주소의 내용으로 처리한다는 것을 의미한다.</p>
+<p><strong>적재</strong>를 <strong>불러온다</strong>로 바꿔보자.</p>
+<p>AC에 메모리 주소 X의 내용을 간접적으로 <strong>불러온다는</strong> 의미는, 주소 X의 내용을 <strong>불러오는</strong>것이 아닌(내용(contents)을 <strong>불러왔을때</strong>) 다른 주소의 내용으로 처리한다는 것을 의미한다.</p>
+<p>불러왔다는 의미보다는 <strong>적재</strong>라는 의미가 더 적절하다.</p>
 <p>결론은 단어 공부는 꾸준하게, 안다고 생각하는 것도 다시 보자.</p>
 
 </div>
