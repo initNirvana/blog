@@ -1,7 +1,8 @@
 output_dir: docs
 rmd_files: [
     "index.Rmd",
-    "software-translated-word.Rmd"
+    "software-translated-word.Rmd",
+    "take-your-load.Rmd"    
 ]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes

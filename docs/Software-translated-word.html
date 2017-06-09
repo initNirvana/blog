@@ -33,7 +33,7 @@
   
   
 <link rel="prev" href="index.html">
-
+<link rel="next" href="Take-your-load.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -73,6 +73,8 @@
 <li class="chapter" data-level="" data-path="Software-translated-word.html"><a href="Software-translated-word.html#---"><i class="fa fa-check"></i>단어가 뜻하는 의미를 포괄하기</a></li>
 <li class="chapter" data-level="" data-path="Software-translated-word.html"><a href="Software-translated-word.html#eab2b0eba1a0"><i class="fa fa-check"></i>결론</a></li>
 </ul></li>
+<li class="part"><span><b>II 2017 june</b></span></li>
+<li class="chapter" data-level="2" data-path="Take-your-load.html"><a href="Take-your-load.html"><i class="fa fa-check"></i><b>2</b> load를 불러오시겠습니까?</a></li>
 </ul>
 
       </nav>
@@ -104,16 +106,16 @@
 <p>컴퓨터과학 번역어는 어렵다. 일반적으로 단어에서 단어가 뜻하는 의미를 전부 포괄할 수는 없다. 컴퓨터 과학 용어 번역의 목적은 독자의 이해를 최대한 돕도록 하는 것이다. <strong>초보자 대상</strong> 으로 한 용어는 대부분 번역이 되어있는 경우가 많다.</p>
 <p>번역을 하면서 번역용어를 정리 하고있다. 대부분 대한수학회 용어를 먼저 참고하고있다. 다음은 번역하면서 고민을 해본 용어 목록이다. 이 목록은 계속 수정할 것이다.</p>
 <ol style="list-style-type: decimal">
-<li>심볼(symbol) : 심볼은 의미 그대로 한다면 기호다. 튜링기계에서는 알파벳 26개를 기반한 문자집합을 말한다. 기호로 번역한다면 그 의미는 어떻게 되는가? 튜링기계의 헤드도 마찬가지다. 누가 헤드를 머리로 번역할까[^1].</li>
+<li>심볼(symbol) : 심볼은 의미 그대로 한다면 기호다. 튜링기계에서는 알파벳 26개를 기반한 문자집합을 말한다. 기호로 번역한다면 그 의미는 어떻게 되는가? 튜링기계의 헤드도 마찬가지다. 누가 헤드를 머리로 번역할까<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</li>
 <li>accepting state : 오토마타에서 받아들이는 상태, 수용상태 둘 중에 하나를 쓰고 있는 상황이다. 옛날 책을 보면 수용 상태. 위키백과는 받아들이는 상태가 보인다.</li>
 <li>linear bound automata : 선형 유한 오토마타. 단어의 의미를 포함하는 단어를 만드는건 정말 어렵다. linear bound automata는 pushdown automaton과 같이 비결정적으로 동작할 수 있지만, 보조 테이프를 갖추고 있지 않다. 대신, 유한 오토마톤처럼 단일 메인 테이프를 갖는다. 하지만 linear bound automata은 테이프에 읽기/쓰기가 모두 허용된다. linear bound automata은 다른 방향으로 이동할 수 없다는 것이 단점이다. 이런 내용은 영어단어도 의미를 포괄하지 못한다.</li>
 <li>Convex-hull : 컨벡스 헐, 알고리즘 문제 풀이를 할때 자주 볼 수 있을 것이다. 볼록껍질 의미는 맞다. 정말 볼록껍질로 해야할까?</li>
 <li>word problem : 구글에 검색해보면 수학에서 말하는 문장 문제(혹은 문장제)가 나온다. 그러나 컴퓨터 과학에서 말하는 word problem은 다르다. 단어 문제라고 해야할 것이다.</li>
-<li>withness : 위키백과에서는 증거, <a href="http://www.yes24.com/24/Goods/17242644?Acode=101">친절한 수론 길라잡이</a>에서는 증인으로 사용한다. n이 합성수일때 <span class="math inline">\({1, 2, 3, … , n-1}\)</span> 절반 이상이 withness를 가지고 있다. 라는 미하엘 라빈의 정의를 본다면 증거 혹은 증인이 맞아 보인다.</li>
-<li>minima : 수학용어에서는 극소다. 다만 스타이너 트리를 찾는 아날로그 방법인 비눗방울 방법[^2]으로 하는데 극소를 쓴다? 그건 아닐것이다.</li>
+<li>withness : 위키백과에서는 증거, <a href="http://www.yes24.com/24/Goods/17242644?Acode=101">친절한 수론 길라잡이</a>에서는 증인으로 사용한다. n이 홀수인 합성수일때 <span class="math inline">\({1, 2, 3, … , n-1}\)</span> 의 75%의 수가 withness를 가지고 있다. 라는 미하엘 라빈의 정의를 본다면 증거 혹은 증인이 맞아 보인다.</li>
+<li>minima : 수학용어에서는 극소다. 다만 스타이너 트리를 찾는 아날로그 방법인 비눗방울 방법<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>으로 하는데 극소를 쓴다? 그건 아닐것이다.</li>
 <li>list comprehensions : 리스트 해석, 리스트 조건제시법, 어느정도 해당하는 말일 수 있다. 하지만 다양하게 사용되는 컴프리헨션에 대응이 될 수 없다. 음차로 쓰는것을 추천한다.</li>
 </ol>
-<p>사실 이렇게 엉망인 이유는 하나 더 있는데, 컴퓨터과학에는 수학의 개념을 차용한 개념들이 많이 있다. 처음에 링크한 글에는 parameter와 매개변수를 비교했는데, 문제가 조금 복잡하다. 사실 매개변수는 수학 용어에서 왔기때문이다[^3][^4]. 그리고 invariant와 immutable 는 둘다 수학에서 불변이라는 의미다. argument는 수학에서 편각, 변수로 쓰고 있다. 반면 컴퓨터 과학용어로 번역을 했을때는 인수로 쓰고 있다. parameter와 argument의 차이를 설명한 인용을 보도록 하자.</p>
+<p>사실 이렇게 엉망인 이유는 하나 더 있는데, 컴퓨터과학에는 수학의 개념을 차용한 개념들이 많이 있다. 처음에 링크한 글에는 parameter와 매개변수를 비교했는데, 문제가 조금 복잡하다. 사실 매개변수는 수학 용어에서 왔기때문이다<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a><a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a>. 그리고 invariant와 immutable 는 둘다 수학에서 불변이라는 의미다. argument는 수학에서 편각, 변수로 쓰고 있다. 반면 컴퓨터 과학용어로 번역을 했을때는 인수로 쓰고 있다. parameter와 argument의 차이를 설명한 인용을 보도록 하자.</p>
 <blockquote>
 <p>We well generally use parameter for a variable named in the parenthesized list in a function definition, and argument for the value used in a call of the function. - K&amp;R, C Programming Language (2nd Edition), p.25</p>
 </blockquote>
@@ -126,20 +128,28 @@
 <p class="caption">이정도로 한국어 문서가 빈약할 줄은 몰랐어</p>
 </div>
 <p>요약하면 쉽게 읽히기 위한 글(번역)을 쓰기 위해선 어느정도 용어를 번역해야 한다. 초보자를 대상으로 하는 책은 더더욱 용어를 번역해야한다. 위키백과는 참고는 할만하지만 번역용어 제시 사이트로는 좋지 못한 상태다. 한국어 웹 문서는 빈약하다.</p>
-<p>[^1] : 위키백과 튜링 기계 <a href="https://ko.wikipedia.org/wiki/%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84">https://ko.wikipedia.org/wiki/%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84</a></p>
-<p>[^2] : CS 언플러그드 <a href="http://www.playsw.or.kr/repo/cs_unplugged/379" class="uri">http://www.playsw.or.kr/repo/cs_unplugged/379</a></p>
-<p>[^3] : 류광의 번역 이야기 parameter, argument, 인자, 인수, 매개 변수 <a href="http://occamsrazr.net/tt/11" class="uri">http://occamsrazr.net/tt/11</a></p>
-<p>[^4] : 수리과학연구정보센터 <a href="http://icms.kaist.ac.kr/new_sub05/sub05_04.php" class="uri">http://icms.kaist.ac.kr/new_sub05/sub05_04.php</a></p>
 
 </div>
+</div>
+
+
+
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p>컴퓨터 프로그래밍의 예술 1 vols. 도널드 크누스 지음. 류광 옮김. 한빛미디어. 2006년. pp. 166<a href="Software-translated-word.html#fnref1">↩</a></p></li>
+<li id="fn2"><p>컴퓨터 구조론. 김종현 지음. 생능출판. 2013년. pp. 97<a href="Software-translated-word.html#fnref2">↩</a></p></li>
+<li id="fn3"><p>컴퓨터 개론. 강환수, 조진형, 신용현, 강환일 공저. 인피니티북스. 2015년. pp. 125<a href="Software-translated-word.html#fnref3">↩</a></p></li>
+<li id="fn4"><p>수리과학연구정보센터 <a href="http://icms.kaist.ac.kr/new_sub05/sub05_04.php" class="uri">http://icms.kaist.ac.kr/new_sub05/sub05_04.php</a><a href="Software-translated-word.html#fnref4">↩</a></p></li>
+</ol>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="Take-your-load.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>

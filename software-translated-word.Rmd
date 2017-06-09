@@ -20,7 +20,7 @@
 3. linear bound automata : 선형 유한 오토마타. 단어의 의미를 포함하는 단어를 만드는건 정말 어렵다. linear bound automata는 pushdown automaton과 같이 비결정적으로 동작할 수 있지만, 보조 테이프를 갖추고 있지 않다. 대신, 유한 오토마톤처럼 단일 메인 테이프를 갖는다. 하지만 linear bound automata은 테이프에 읽기/쓰기가 모두 허용된다. linear bound automata은 다른 방향으로 이동할 수 없다는 것이 단점이다. 이런 내용은 영어단어도 의미를 포괄하지 못한다.
 4. Convex-hull : 컨벡스 헐, 알고리즘 문제 풀이를 할때 자주 볼 수 있을 것이다. 볼록껍질 의미는 맞다. 정말 볼록껍질로 해야할까?
 5. word problem : 구글에 검색해보면 수학에서 말하는 문장 문제(혹은 문장제)가 나온다. 그러나 컴퓨터 과학에서 말하는 word problem은 다르다. 단어 문제라고 해야할 것이다.
-6. withness : 위키백과에서는 증거, [친절한 수론 길라잡이](http://www.yes24.com/24/Goods/17242644?Acode=101)에서는 증인으로 사용한다. n이 합성수일때 ${1, 2, 3, … , n-1}$ 절반 이상이 withness를 가지고 있다. 라는 미하엘 라빈의 정의를 본다면 증거 혹은 증인이 맞아 보인다.
+6. withness : 위키백과에서는 증거, [친절한 수론 길라잡이](http://www.yes24.com/24/Goods/17242644?Acode=101)에서는 증인으로 사용한다. n이 홀수인  합성수일때 ${1, 2, 3, … , n-1}$ 의 75%의 수가 withness를 가지고 있다. 라는 미하엘 라빈의 정의를 본다면 증거 혹은 증인이 맞아 보인다.
 7. minima : 수학용어에서는 극소다. 다만 스타이너 트리를 찾는 아날로그 방법인 비눗방울 방법[^2]으로 하는데 극소를 쓴다? 그건 아닐것이다.
 8. list comprehensions : 리스트 해석, 리스트 조건제시법, 어느정도 해당하는 말일 수 있다. 하지만 다양하게 사용되는 컴프리헨션에 대응이 될 수 없다. 음차로 쓰는것을 추천한다.
 
@@ -36,10 +36,10 @@
 
 요약하면 쉽게 읽히기 위한 글(번역)을 쓰기 위해선 어느정도 용어를 번역해야 한다. 초보자를 대상으로 하는 책은 더더욱 용어를 번역해야한다. 위키백과는 참고는 할만하지만 번역용어 제시 사이트로는 좋지 못한 상태다. 한국어 웹 문서는 빈약하다.
 
-[^1] : 위키백과 튜링 기계 https://ko.wikipedia.org/wiki/%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84 
+[^1]: 위키백과 튜링 기계 https://ko.wikipedia.org/wiki/%ED%8A%9C%EB%A7%81%EA%B8%B0%EA%B3%84 
 
-[^2] : CS 언플러그드 http://www.playsw.or.kr/repo/cs_unplugged/379 
+[^2]: CS 언플러그드 http://www.playsw.or.kr/repo/cs_unplugged/379 
 
-[^3] : 류광의 번역 이야기 parameter, argument, 인자, 인수, 매개 변수 http://occamsrazr.net/tt/11
+[^3]: 류광의 번역 이야기 parameter, argument, 인자, 인수, 매개 변수 http://occamsrazr.net/tt/11
 
-[^4] : 수리과학연구정보센터 http://icms.kaist.ac.kr/new_sub05/sub05_04.php
+[^4]: 수리과학연구정보센터 http://icms.kaist.ac.kr/new_sub05/sub05_04.php
