@@ -1,7 +1,7 @@
 --- 
 # title: "해탈 블로그"
 author: "Nirvana"
-#date: "2017-08-03"
+#date: "2017-08-04"
 description: "(blank)"
 site: bookdown::bookdown_site
 documentclass: book
