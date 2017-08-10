@@ -1,5 +1,3 @@
-
-# (PART) 2017 July {-} 
 # Random Number in a nutshell {#do-you-know-random}
 2017 July
 
