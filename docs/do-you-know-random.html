@@ -136,7 +136,9 @@ int rand(void) // RAND_MAX assumed to be 32767
 <p>간단하게 수열을 이진법으로 한다면 <span class="math inline">\(01101\)</span>으로 된 수열을 <span class="math inline">\(m\)</span>만큼 반복하여 만드는 짧은 프로그램을 생각해볼 수 있다.</p>
 <pre><code>for i &lt;- to m
     output 0,1,1,0,1</code></pre>
-<p>프로그램은 23개의 아스키 문자와 변수 <span class="math inline">\(m\)</span>을 포함하고 있다. 그리고 <span class="math inline">\(m\)</span>은 프로그램 길이의 식인 <span class="math inline">\(23 + log M\)</span> 이 된다. 그리고 프로그램은 <span class="math inline">\(n=5m\)</span> 의 길이를 가지는 수열을 생성한다. 무작위성을 측정하는 방법 중 하나는 문자열의 길이와 프로그램 길이 비율을 맞추는 것이다. m의 반복으로 만들어지는 수열 <span class="math inline">\(0,1,1,0,1\)</span>은 다음과 같은 무작위성을 가진다. <span class="math inline">\(r \leq \frac{23 + \log{m} }{5m}\)</span> 이 무작위성 비율의 <span class="math inline">\(m\)</span>이 증가할수록 수열에서 <span class="math inline">\(0\)</span> 혹은 <span class="math inline">\(1\)</span>이 많아지는 경향이 있음을 알 수 있다. 극한으로 본다면 무작위성 비율은 0이다. 엄밀히 말해 무작위는 아니라는 의미다.</p>
+<p>프로그램은 23개의 아스키 문자와 변수 <span class="math inline">\(m\)</span>을 포함하고 있다. 그리고 <span class="math inline">\(m\)</span>은 프로그램 길이의 식인 <span class="math inline">\(23 + log M\)</span> 이 된다. 그리고 프로그램은 <span class="math inline">\(n=5m\)</span> 의 길이를 가지는 수열을 생성한다. 무작위성을 측정하는 방법 중 하나는 문자열의 길이와 프로그램 길이 비율을 맞추는 것이다. m의 반복으로 만들어지는 수열 <span class="math inline">\(0,1,1,0,1\)</span>은 다음과 같은 무작위성을 가진다.</p>
+<p><span class="math inline">\(r \leq \frac{23 + \log{m} }{5m}\)</span></p>
+<p>이 무작위성 비율의 <span class="math inline">\(m\)</span>이 증가할수록 수열에서 <span class="math inline">\(0\)</span> 혹은 <span class="math inline">\(1\)</span>이 많아지는 경향이 있음을 알 수 있다. 극한으로 본다면 무작위성 비율은 0이다. 엄밀히 말해 무작위는 아니라는 의미다.</p>
 <p>자 그러면, 특정 무작위 수열 <span class="math inline">\(S\)</span>가 무작위 임을 증명하려면 어떻게 해야할까? <span class="math inline">\(S\)</span>보다 짧은 프로그램이 없어야한다. 콜모고로프는 어떤 수열이 자기 자신의 길이와 같은 크기의 복잡성을 가질 때 그런 수열을 무작위적(randomness)라 부르자고 제안했다. <span class="math inline">\(S\)</span>보다 짧은 프로그램이 없어야 한다는 의미는 “길이 <span class="math inline">\(N\)</span>의 수열이 주어졌을때 이 수열이 복잡성 <span class="math inline">\(N\)</span>을 가진다라는 것을 증명할 수 있는가?”라는 질문으로 바뀔 수 있다.</p>
 <p>여기서 체이틴과 콜모고로프는 알고리즘적 정보이론을 만들면서 베리의 역설을 응용했음을 알 수 있다.</p>
 <blockquote>
