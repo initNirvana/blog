@@ -12,3 +12,7 @@ bookdown::gitbook:
   toc_depth: 3
   toc_unnumbered: no
   split_by: section
+  fontsettings:
+    family: 'Noto Sans KR'
+  sharing:
+      twitter: yes

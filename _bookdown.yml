@@ -4,7 +4,8 @@ rmd_files: [
     "software-translated-word.Rmd",
     "take-your-load.Rmd",
     "once-upon-a-time.Rmd",
-    "do-you-know-random.Rmd"
+    "do-you-know-random.Rmd",
+    "simplex-method-and-yankees.Rmd",
 ]
 clean: [packages.bib, bookdown.bbl]
 new_session: yes
