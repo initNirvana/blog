@@ -37,9 +37,9 @@ LDA X : Load the AC with the contents of memory address X.
 
 다음은 LOAD addr의 마이크로 연산이다.
 
-1. t_0 : MAR <- IR(addr)
-2. t_1 : MBR <- M[MAR]
-3. t_2 : AC <- MBR
+$t_0 : MAR \leftarrow IR(addr) \\$
+$t_1 : MBR \leftarrow M[MAR] \\$
+$t_2 : AC \leftarrow MBR \\$
 
 첫번째 주기에서는 명령어 레지스터 IR에 loaded한 명령어의 오퍼랜드인 주소(addr)를 MAR을 통하여 기억장치로 보낸다.  두번째 주기에는 주소가 지정하는 기억장소로부터 데이터를 인출하여 MBR에 저장하며, 그 데이터를 세번째 주기에서 AC 레지스터에 load함으로써 LOAD 명령어의 실행이 완료된다.
 
