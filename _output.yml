@@ -5,7 +5,7 @@ bookdown::gitbook:
       before: | 
         <li><strong><a href="./">해탈 블로그</a></strong></li>
     edit:
-      link: https://gihub.com/initNirvana/edit/master/%s
+      link: https://github.com/initNirvana/edit/master/%s
       text: "Edit"
     sharing: no
   css: style.css
