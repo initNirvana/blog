@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Algorithmic Informaion Theory on 해탈의 블로그</title>
+    <link>/categories/algorithmic-informaion-theory/</link>
+    <description>Recent content in Algorithmic Informaion Theory on 해탈의 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/algorithmic-informaion-theory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Random number in a nutshell</title>
+      <link>/2017/07/17/do-you-know-random/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/17/do-you-know-random/</guid>
+      <description>우리가 알고 있는 무작위 수는 사실 무작위 수가 아니다.
+이번 글에서는 의사 무작위 수로 불리는 이유를 볼 것이다. 무작위 수의 성질을 3가지로 볼 수 있다.
+ 무작위성(Randomness) : 말 그대로 수열이 무작위로 되어있는 성질 예측 불가능성 :다음 수를 예측할 수 없다는 성질 재현 불가능성 : 같은 수열을 재현할 수 없다는 성질  무작위 수를 분류한다면 약한 의사 무작위 수, 강한 의사 무작위 수 그리고 진정한 무작위 수가 된다. 약한 의사 무작위 수는 무작위성만 가지고 있으며, 강한 의사 무작위 수는 예측 불가능성까지, 진정한 무작위 수는 재현 불가능성까지 가진다.</description>
+    </item>
+    
+  </channel>
+</rss>

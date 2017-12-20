@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Load on 해탈의 블로그</title>
+    <link>/tags/load/</link>
+    <description>Recent content in Load on 해탈의 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 17 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/load/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Load를 불러오시겠습니까?</title>
+      <link>/2017/06/17/take-your-load/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/06/17/take-your-load/</guid>
+      <description>예전에 TAOCP 1권의 MMIX 부분을 읽고 있던 중 적재(load)라는 단어를 보게 되었다. LDA는 알고 있었으나 Load라는 단어의 뜻은 불러오기밖에 몰랐었다.
+일단 TAOCP 1권에서 LDA를 설명하는 인용1을 보도록 하자.
+ LDA (load A; A에 적재). C = 8; F = 필드
+CONTENTS(M)의 지정된 필드로 레지스터 A의 이전 내용을 대체 한다.  부분 필드가 입력으로 쓰이는 모든 명령에서, 필드 자체에 부호가 포함되어 있으면 그 부호가 쓰이고, 그렇지 않으면 부호는 +로 간주된다. 레지스터에 적재될 때, 필드는 그 오른쪽 끝이 레지스터의 오른쪽 끝에 일치하도록 적절히 이동된다.</description>
+    </item>
+    
+  </channel>
+</rss>

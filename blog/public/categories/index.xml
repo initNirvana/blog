@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 해탈의 블로그</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on 해탈의 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Algorithmic Information Theory</title>
+      <link>/categories/algorithmic-information-theory/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/algorithmic-information-theory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computer Science</title>
+      <link>/categories/computer-science/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/computer-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lcg</title>
+      <link>/categories/lcg/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/lcg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linear Programming</title>
+      <link>/categories/linear-programming/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/linear-programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random</title>
+      <link>/categories/random/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/random/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Simplex Method</title>
+      <link>/categories/simplex-method/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/simplex-method/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Translation</title>
+      <link>/categories/translation/</link>
+      <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/translation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>단체법</title>
+      <link>/categories/%EB%8B%A8%EC%B2%B4%EB%B2%95/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/%EB%8B%A8%EC%B2%B4%EB%B2%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>전산 순화 용어</title>
+      <link>/categories/%EC%A0%84%EC%82%B0-%EC%88%9C%ED%99%94-%EC%9A%A9%EC%96%B4/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/%EC%A0%84%EC%82%B0-%EC%88%9C%ED%99%94-%EC%9A%A9%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>정보통신부</title>
+      <link>/categories/%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%B6%80/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/%EC%A0%95%EB%B3%B4%ED%86%B5%EC%8B%A0%EB%B6%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>한자</title>
+      <link>/categories/%ED%95%9C%EC%9E%90/</link>
+      <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/%ED%95%9C%EC%9E%90/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

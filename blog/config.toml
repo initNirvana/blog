@@ -1,0 +1,51 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "해탈의 블로그"
+theme = "hugo-lithium-theme"
+googleAnalytics = "UA-51369424-3"
+disqusShortname = "initNirvana"
+DisqusShortname = "initNirvana"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+footnotereturnlinkcontents = "↩"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    note = "/note/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Home"
+    url = "/"
+	weight = 1
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+	weight = 2
+[[menu.main]]
+    name = "Categories"
+	url = "/categories/"
+	weight = 3
+[[menu.main]]
+	name = "Tags"
+	url = "/tags/"
+	weight = 4
+[[menu.main]]
+	name = "Subscribe"
+	url = "/index.xml"
+
+[params]
+    description = "A website built through Hugo and blogdown."
+    footer = "&copy; 2017 | [Github](https://github.com/initNirvana)" 
+    # options for highlight.js (version, additional languages, and theme)
+    highlightjsVersion = "9.11.0"
+    highlightjsCDN = "//cdn.bootcss.com"
+    highlightjsLang = ["r", "yaml"]
+    highlightjsTheme = "github"
+
+    MathJaxCDN = "//cdn.bootcss.com"
+    MathJaxVersion = "2.7.1"
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"

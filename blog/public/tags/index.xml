@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 해탈의 블로그</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on 해탈의 블로그</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 14 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computerscience</title>
+      <link>/tags/computerscience/</link>
+      <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/computerscience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Load</title>
+      <link>/tags/load/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/load/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mmix</title>
+      <link>/tags/mmix/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mmix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Taocp</title>
+      <link>/tags/taocp/</link>
+      <pubDate>Sat, 17 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/taocp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Translation</title>
+      <link>/tags/translation/</link>
+      <pubDate>Tue, 17 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/translation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Words</title>
+      <link>/tags/words/</link>
+      <pubDate>Sun, 14 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/words/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

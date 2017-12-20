@@ -1,0 +1,19 @@
+name: edward
+channels:
+- defaults
+dependencies:
+- python=3.6.0=0
+- pip:
+  - numpy
+  - six
+  - keras
+  - prettytensor
+  - tensorflow
+  - matplotlib
+  - seaborn
+  - edward==1.3.4
+  - observations
+  - pillow
+  - scipy
+  - requests
+
