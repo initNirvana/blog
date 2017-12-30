@@ -58,8 +58,8 @@
  static unsigned long int next = 1;
  int rand(void) // RAND_MAX assumed to be 32767
 {
-	    next = next * 1103515245 + 12345;
-		    return (unsigned int)(next/65536) % 32768;
+    next = next * 1103515245 + 12345;
+    return (unsigned int)(next/65536) % 32768;
 }
 </code></pre>
 
@@ -82,7 +82,7 @@
 <p>간단하게 수열을 이진법으로 한다면 <code>$01101$</code>으로 된 수열을 <code>$m$</code>만큼 반복하여 만드는 짧은 프로그램을 생각해볼 수 있다.</p>
 
 <pre><code>for i &lt;- to m
-output 0,1,1,0,1
+  output 0,1,1,0,1
 </code></pre>
 
 <p>프로그램은 23개의 아스키 문자와 변수 <code>$m$</code>을 포함하고 있다. 그리고 <code>$m$</code>은 프로그램 길이의 식인 <code>$23 + log M$</code> 이 된다. 그리고 프로그램은 <code>$n=5m$</code> 의 길이를 가지는 수열을 생성한다.  무작위성을 측정하는 방법 중 하나는 문자열의 길이와 프로그램 길이 비율을 맞추는 것이다. <code>$m$</code>의 반복으로 만들어지는 수열 <code>$0,1,1,0,1$</code>은 다음과 같은 무작위성을 가진다.</p>
