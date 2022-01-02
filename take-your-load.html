@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 load를 불러오시겠습니까? | take-your-load.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="1 load를 불러오시겠습니까? | take-your-load.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="1 load를 불러오시겠습니까? | take-your-load.knit" />
   
   
   
@@ -25,25 +24,33 @@
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 
 
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
 
 
 
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -85,11 +92,11 @@
             <section class="normal" id="section-">
 <!--bookdown:title:end-->
 <!--bookdown:title:start-->
-<div id="Take-your-load" class="section level1">
+<div id="Take-your-load" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> load를 불러오시겠습니까?</h1>
 <p>2017 june</p>
 <p>예전에 TAOCP 1권의 MMIX 부분을 읽고 있던 중 <b>적재(load)</b>라는 단어를 보게 되었다. LDA는 알고 있었으나 Load라는 단어의 뜻은 불러오기밖에 몰랐었다.</p>
-<p>일단 TAOCP 1권에서 LDA를 설명하는 인용<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>을 보도록 하자.</p>
+<p>일단 TAOCP 1권에서 LDA를 설명하는 인용<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>을 보도록 하자.</p>
 <blockquote>
 <p>LDA (load A; A에 적재). C = 8; F = 필드</p>
 </blockquote>
@@ -98,13 +105,14 @@
 </blockquote>
 <p>이해하기 어렵다. 책의 예제를 보자.</p>
 <blockquote>
-<p>예 : F가 정규 필드 명세 (0:5)이면 장소 M의 모든 내용이 rA에 복사된다. F가 (1:5)이면 CONTENTS(M)의 절대값이 부호 +와 함께 적재된다. M에 어떤 명령 워드가 들어 있으며 F가 (0:2)이면 그 “±AA 필드”가 A에 다음과 같이 <strong>적재</strong>된다. [±000AA]</p>
+<p>예 : F가 정규 필드 명세 (0:5)이면 장소 M의 모든 내용이 rA에 복사된다. F가 (1:5)이면 CONTENTS(M)의 절대값이 부호 +와 함께 적재된다. M에 어떤 명령 워드가 들어 있으며 F가 (0:2)이면 그 “±AA 필드”가 A에 다음과 같이 <strong>적재</strong>된다.
+[±000AA]</p>
 </blockquote>
-<p>이번엔 다른 책<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>을 보자.</p>
+<p>이번엔 다른 책<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>을 보자.</p>
 <blockquote>
 <p>LOAD : 기억장치로부터 데이터를 읽어서 누산기(AC)에 <strong>적재</strong></p>
 </blockquote>
-<p>또 다른 책<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>을 보자.</p>
+<p>또 다른 책<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>을 보자.</p>
 <blockquote>
 <p>명령어 LDA | LDA B | 피연산자의 자료 B(주소 B의 자료)를 레지스터에 <strong>가져오는</strong> 명령어</p>
 </blockquote>
@@ -117,10 +125,13 @@
 <p>누가 적절하지 않은 용어를 쓰고 있을까?</p>
 <p>용어 이야기는 여기까지 하고 컴퓨터 내부로 가보자. 니모닉 LDA를 실행하면 내부에서 어떤일이 일어날까?</p>
 <p>다음은 LOAD addr의 마이크로 연산이다.</p>
-<p><span class="math inline">\(t_0 : MAR \leftarrow IR(addr) \\\)</span> <span class="math inline">\(t_1 : MBR \leftarrow M[MAR] \\\)</span> <span class="math inline">\(t_2 : AC \leftarrow MBR \\\)</span></p>
+<p><span class="math inline">\(t_0 : MAR \leftarrow IR(addr) \\\)</span>
+<span class="math inline">\(t_1 : MBR \leftarrow M[MAR] \\\)</span>
+<span class="math inline">\(t_2 : AC \leftarrow MBR \\\)</span></p>
 <p>첫번째 주기에서는 명령어 레지스터 IR에 loaded한 명령어의 오퍼랜드인 주소(addr)를 MAR을 통하여 기억장치로 보낸다. 두번째 주기에는 주소가 지정하는 기억장소로부터 데이터를 인출하여 MBR에 저장하며, 그 데이터를 세번째 주기에서 AC 레지스터에 load함으로써 LOAD 명령어의 실행이 완료된다.</p>
 <p>load(or loaded)를 적재나 불러오기로 읽어보라.</p>
-<p>이번엔 다른 예문을 보자. 메모리 주소 X의 내용을 언급할때는, 주소가 X인 메모리 워드에 현재 저장된 정수를 말한다. AC에 메모리 주소 X의 내용을 간접적으로 <strong>적재한다는</strong> 의미는, 주소 X의 내용을 <strong>적재하는 것이</strong> 아닌(내용(contents)가 <strong>적재됬을때</strong>) 다른 주소의 내용으로 처리한다는 것을 의미한다.</p>
+<p>이번엔 다른 예문을 보자.
+메모리 주소 X의 내용을 언급할때는, 주소가 X인 메모리 워드에 현재 저장된 정수를 말한다. AC에 메모리 주소 X의 내용을 간접적으로 <strong>적재한다는</strong> 의미는, 주소 X의 내용을 <strong>적재하는 것이</strong> 아닌(내용(contents)가 <strong>적재됬을때</strong>) 다른 주소의 내용으로 처리한다는 것을 의미한다.</p>
 <p><strong>적재</strong>를 <strong>불러온다</strong>로 바꿔보자.</p>
 <p>AC에 메모리 주소 X의 내용을 간접적으로 <strong>불러온다는</strong> 의미는, 주소 X의 내용을 <strong>불러오는</strong>것이 아닌(내용(contents)을 <strong>불러왔을때</strong>) 다른 주소의 내용으로 처리한다는 것을 의미한다.</p>
 <p>불러왔다는 의미보다는 <strong>적재</strong>라는 의미가 더 적절하다.</p>
@@ -137,9 +148,9 @@
 <div class="footnotes">
 <hr />
 <ol start="1">
-<li id="fn1"><p>컴퓨터 프로그래밍의 예술 1 vols. 도널드 크누스 지음. 류광 옮김. 한빛미디어. 2006년. pp. 166<a href="#fnref1">↩</a></p></li>
-<li id="fn2"><p>컴퓨터 구조론. 김종현 지음. 생능출판. 2013년. pp. 97<a href="#fnref2">↩</a></p></li>
-<li id="fn3"><p>컴퓨터 개론. 강환수, 조진형, 신용현, 강환일 공저. 인피니티북스. 2015년. pp. 125<a href="#fnref3">↩</a></p></li>
+<li id="fn1"><p>컴퓨터 프로그래밍의 예술 1 vols. 도널드 크누스 지음. 류광 옮김. 한빛미디어. 2006년. pp. 166<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>컴퓨터 구조론. 김종현 지음. 생능출판. 2013년. pp. 97<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>컴퓨터 개론. 강환수, 조진형, 신용현, 강환일 공저. 인피니티북스. 2015년. pp. 125<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
             </section>
@@ -152,12 +163,13 @@
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -168,14 +180,22 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://gihub.com/initNirvana/edit/master/%s",
+"link": "https://github.com/initNirvana/edit/master/%s",
 "text": "Edit"
 },
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
 "download": null,
+"search": false,
 "toc": {
 "collapse": "section"
-},
-"search": false
+}
 });
 });
 </script>
@@ -185,9 +205,12 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>1 Random Number in a nutshell | do-you-know-random.knit</title>
+  <meta name="description" content="" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="1 Random Number in a nutshell | do-you-know-random.knit" />
   <meta property="og:type" content="book" />
   
   
@@ -17,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="1 Random Number in a nutshell | do-you-know-random.knit" />
   
   
   
@@ -25,25 +24,33 @@
 
 
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
 
 
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
 
 
 
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -64,8 +71,9 @@
 <li><strong><a href="./">해탈 블로그</a></strong></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path=""><a href="#do-you-know-random"><i class="fa fa-check"></i><b>1</b> Random Number in a nutshell</a><ul>
-<li class="chapter" data-level="" data-path=""><a href="#------"><i class="fa fa-check"></i>진정한 무작위 수는 어디서 얻을 수 있을까?</a></li>
+<li class="chapter" data-level="1" data-path=""><a href="#do-you-know-random"><i class="fa fa-check"></i><b>1</b> Random Number in a nutshell</a>
+<ul>
+<li class="chapter" data-level="" data-path=""><a href="#진정한-무작위-수는-어디서-얻을-수-있을까"><i class="fa fa-check"></i>진정한 무작위 수는 어디서 얻을 수 있을까?</a></li>
 <li class="chapter" data-level="" data-path=""><a href="#reference"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
 </ul>
@@ -87,7 +95,7 @@
             <section class="normal" id="section-">
 <!--bookdown:title:end-->
 <!--bookdown:title:start-->
-<div id="do-you-know-random" class="section level1">
+<div id="do-you-know-random" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Random Number in a nutshell</h1>
 <p>2017 July</p>
 <p>우리가 알고 있는 무작위 수는 사실 무작위 수가 아니다.</p>
@@ -99,7 +107,8 @@
 </ol>
 <p>무작위 수를 분류한다면 약한 의사 무작위 수, 강한 의사 무작위 수 그리고 진정한 무작위 수가 된다. 약한 의사 무작위 수는 무작위성만 가지고 있으며, 강한 의사 무작위 수는 예측 불가능성까지, 진정한 무작위 수는 재현 불가능성까지 가진다.</p>
 <p>기본적인 무작위 수 생성기인 선형 합동 생성기(Linear congruential generator, LCG)를 보자.</p>
-<p>LCG의 수식 <span class="math inline">\({x}_{n+1} \leftarrow (k \times x_n + c)\; mod \; m\)</span></p>
+<p>LCG의 수식
+<span class="math inline">\({x}_{n+1} \leftarrow (k \times x_n + c)\; mod \; m\)</span></p>
 <pre><code>// 실제 stdlib/rand.c에서 쓰이는 LCG 코드
 // ISO9899
 static unsigned long int next = 1;
@@ -130,7 +139,7 @@ int rand(void) // RAND_MAX assumed to be 32767
 <p>베리의 역설을 응용하면 아스키문자를 사용하여 정의될 수 없는 가장 작은 수가 무엇인가?가 된다. 만일 이 수가 발견된다면 역설이 등장할것이다. 다시 말해 수열이 프로그램 <span class="math inline">\(P\)</span>에 의해서만 생성될수 있는지 확인하면 된다라는 말이 된다.</p>
 <p>여기서 재밌는 결론이 나올 수 있는데, 괴델은 정의한 <span class="math inline">\(PM\)</span>에서 어떤 공리 체계는 불완전하다는 것, 즉 <span class="math inline">\(PM\)</span>에서 증명할 수 없는 정리가 있음을 보여주었다. 물론 길이가 긴 수열이 무작위라고 주장하는 다양한 정리가 있지만, 의사 무작위일 뿐이다. 체이틴-콜모고로프 논문의 핵심은 수열이 무작위 인지 아닌지 결코 알 수 없지만 적어도 프로그램으로 생성된 수열의 무작위성 정도를 측정할 수 있다는 것이다.</p>
 <p>그리고 명제와 프로그램은 수학적으로 엄밀이 정의될 수 있다는 것이다. 러셀의 역설에서 시작한 괴델의 불완전성 정리도 튜링 기계의 멈춤 문제도 프로그램 내에서 정의될 수 있다는 의미가 된다.</p>
-<div id="------" class="section level3 unnumbered">
+<div id="진정한-무작위-수는-어디서-얻을-수-있을까" class="section level3 unnumbered">
 <h3>진정한 무작위 수는 어디서 얻을 수 있을까?</h3>
 <ul>
 <li>방사선 관측기의 출력</li>
@@ -143,8 +152,8 @@ int rand(void) // RAND_MAX assumed to be 32767
 <ul>
 <li><a href="http://cer.freeshell.org/renma/LibraryRandomNumber/">각 언어별 의사 무작위 수 생성 방법</a></li>
 <li><a href="http://nirvana-wiki.appspot.com/%EB%AC%B4%EC%9E%91%EC%9C%84%EC%84%B1">무작위성</a></li>
-<li>컴퓨터 프로그래밍의 예술 2 vols. 도널드 크누스 지음. 류광 옮김. 한빛미디어. 2006년. pp.</li>
-<li>인포메이션. 제임스 글릭 지음. 박래선, 김태훈 옮김. 김상욱 감수. 동아시아. 2017년. pp. 441~</li>
+<li>컴퓨터 프로그래밍의 예술 2 vols. 도널드 크누스 지음. 류광 옮김. 한빛미디어. 2006년. pp. </li>
+<li>인포메이션. 제임스 글릭 지음. 박래선, 김태훈 옮김. 김상욱 감수. 동아시아. 2017년. pp. 441~</li>
 <li>Numerical Recipes - The Art of Scientific Computing 3rd pp. 430-</li>
 <li>Gregory J. Chaitin. Algorithmic Information Theory. Cambridge University Press, Cambridge, 1993. pp. 179-183</li>
 </ul>
@@ -160,12 +169,13 @@ int rand(void) // RAND_MAX assumed to be 32767
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -176,14 +186,22 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://gihub.com/initNirvana/edit/master/%s",
+"link": "https://github.com/initNirvana/edit/master/%s",
 "text": "Edit"
 },
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
 "download": null,
+"search": false,
 "toc": {
 "collapse": "section"
-},
-"search": false
+}
 });
 });
 </script>
@@ -193,9 +211,12 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>

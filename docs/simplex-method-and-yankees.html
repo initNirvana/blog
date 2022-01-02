@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="generator" content="bookdown 0.5 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Simplex Method와 양키스 | _main</title>
+  <meta name="description" content="(blank)" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="5 Simplex Method와 양키스 | _main" />
   <meta property="og:type" content="book" />
   
   
-  
+  <meta property="og:description" content="(blank)" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="" />
+  <meta name="twitter:title" content="5 Simplex Method와 양키스 | _main" />
   
-  
-  
-
-
-
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  
+  <meta name="twitter:description" content="(blank)" />
   
 
+<meta name="author" content="Nirvana" />
 
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="do-you-know-random.html"/>
+
+<script src="libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
 
 
 
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 
@@ -64,10 +72,31 @@
 <li><strong><a href="./">해탈 블로그</a></strong></li>
 
 <li class="divider"></li>
-<li class="part"><span><b>I 2017 October</b></span></li>
-<li class="chapter" data-level="1" data-path=""><a href="#simplex-method-and-yankees"><i class="fa fa-check"></i><b>1</b> Simplex Method와 양키스</a><ul>
-<li class="chapter" data-level="" data-path=""><a href="#simplex-method"><i class="fa fa-check"></i>단체법(Simplex method)</a></li>
-<li class="chapter" data-level="" data-path=""><a href="#reference"><i class="fa fa-check"></i>Reference</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>안녕하세요!</a></li>
+<li class="part"><span><b>I 2017 may</b></span></li>
+<li class="chapter" data-level="1" data-path="Software-translated-word.html"><a href="Software-translated-word.html"><i class="fa fa-check"></i><b>1</b> 소프트웨어 번역어 선택의 어려움</a>
+<ul>
+<li class="chapter" data-level="" data-path="Software-translated-word.html"><a href="Software-translated-word.html#위키백과에서-충격받은-번역어"><i class="fa fa-check"></i>위키백과에서 충격받은 번역어</a></li>
+<li class="chapter" data-level="" data-path="Software-translated-word.html"><a href="Software-translated-word.html#단어가-뜻하는-의미를-포괄하기"><i class="fa fa-check"></i>단어가 뜻하는 의미를 포괄하기</a></li>
+<li class="chapter" data-level="" data-path="Software-translated-word.html"><a href="Software-translated-word.html#결론"><i class="fa fa-check"></i>결론</a></li>
+</ul></li>
+<li class="part"><span><b>II 2017 june</b></span></li>
+<li class="chapter" data-level="2" data-path="Take-your-load.html"><a href="Take-your-load.html"><i class="fa fa-check"></i><b>2</b> load를 불러오시겠습니까?</a></li>
+<li class="part"><span><b>III 2017 July</b></span></li>
+<li class="chapter" data-level="3" data-path="Once-upon-a-time.html"><a href="Once-upon-a-time.html"><i class="fa fa-check"></i><b>3</b> 97년 전산 순화 용어 훑어보기 그리고 한자</a>
+<ul>
+<li class="chapter" data-level="" data-path="Once-upon-a-time.html"><a href="Once-upon-a-time.html#한자"><i class="fa fa-check"></i>한자</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="do-you-know-random.html"><a href="do-you-know-random.html"><i class="fa fa-check"></i><b>4</b> Random Number in a nutshell</a>
+<ul>
+<li class="chapter" data-level="" data-path="do-you-know-random.html"><a href="do-you-know-random.html#진정한-무작위-수는-어디서-얻을-수-있을까"><i class="fa fa-check"></i>진정한 무작위 수는 어디서 얻을 수 있을까?</a></li>
+<li class="chapter" data-level="" data-path="do-you-know-random.html"><a href="do-you-know-random.html#reference"><i class="fa fa-check"></i>Reference</a></li>
+</ul></li>
+<li class="part"><span><b>IV 2017 October</b></span></li>
+<li class="chapter" data-level="5" data-path="simplex-method-and-yankees.html"><a href="simplex-method-and-yankees.html"><i class="fa fa-check"></i><b>5</b> Simplex Method와 양키스</a>
+<ul>
+<li class="chapter" data-level="" data-path="simplex-method-and-yankees.html"><a href="simplex-method-and-yankees.html#단체법simplex-method"><i class="fa fa-check"></i>단체법(Simplex method)</a></li>
+<li class="chapter" data-level="" data-path="simplex-method-and-yankees.html"><a href="simplex-method-and-yankees.html#reference-1"><i class="fa fa-check"></i>Reference</a></li>
 </ul></li>
 </ul>
 
@@ -86,10 +115,8 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<!--bookdown:title:end-->
-<!--bookdown:title:start-->
-<div id="simplex-method-and-yankees" class="section level1">
-<h1><span class="header-section-number">1</span> Simplex Method와 양키스</h1>
+<div id="simplex-method-and-yankees" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Simplex Method와 양키스</h1>
 <p>2017 October</p>
 <p>George Bernard Dantzig (<em>ˈdæntsɪɡ</em>)가 1974년에 개발한 단체법(Simplex Method)을 보기 전에 Simplex Mothod의 뿌리인 Dynamic Programming을 보자.</p>
 <p>잠깐, Dynamic Programming의 번역어를 아는가? <strong>동적 계획법</strong> 혹은 <strong>다이나믹 프로그래밍</strong>이 익숙할 것이다. 이 용어는 수학자 리처드 벨만(Richard E. Bellman)이 정의한 용어인데, 당시 Dynamic Programming이라고 한 이유를 그의 자서전(Eye of the Hurricane: An Autobiography)에서 볼 수 있다.</p>
@@ -141,11 +168,13 @@
 <p><span class="math inline">\(x_1, x_2\)</span>의 값은 음수가 아니어야 한다.연립부등식으로 풀면 <span class="math inline">\(x_2\)</span>의 식을 얻을 수 있다.</p>
 <p><span class="math inline">\(x_2 \leq 9 - \frac{3}{2}x_1\)</span></p>
 <p>앞의 실행가능조건(feasibility condition)을 이용하여 그래프를 그리면 다음과 같다.</p>
-<p><img src="https://i.imgur.com/IlVwIBS.png" /> <a href="https://www.desmos.com/calculator/rke69q0pn7">Desmos Graphing Calculator</a></p>
+<p><img src="https://i.imgur.com/IlVwIBS.png" />
+<a href="https://www.desmos.com/calculator/rke69q0pn7">Desmos Graphing Calculator</a></p>
 <p>0보다 크면서 선 안의 영역이 실행가능영역이다. <span class="math inline">\(x_1 = 2 , x_2 = 6\)</span>이 되면서 <span class="math inline">\((2,6)\)</span>라는 값이 목적함수(최대화할 식)의 최적해가 된다. 이처럼 도해법은 가장 직관적인 방법이다. 그러나 변수가 3개 이상이 되면 표현하기가 어려워지며 4개 이상이면 적용이 불가능하다. 이러한 문제를 일반적으로 해결 할 수 있는 방법이 필요하게 된다.</p>
-<div id="simplex-method" class="section level3 unnumbered">
+<div id="단체법simplex-method" class="section level3 unnumbered">
 <h3>단체법(Simplex method)</h3>
-<p>댄치그가 개발한 단체법의 기본 개념은 최적해 후보에 대한 최적여부를 체계적으로 검토하여 가장 빠른 시간내에 최적해를 찾아내고자 하는 것이다. 단체법을 적용하기 전에 가장 해야할 일은 부등식을 등식으로 바꾸는 표준형(standard form)을 적용하는 것이다. 예를 들어 <span class="math inline">\(2x_1 \leq 50\)</span> 이라면 여유 변수(slack variable) S를 더하여 <span class="math inline">\(2X_1 + S_1 = 50\)</span>으로 만들면 된다.</p>
+<p>댄치그가 개발한 단체법의 기본 개념은 최적해 후보에 대한 최적여부를 체계적으로 검토하여 가장 빠른 시간내에 최적해를 찾아내고자 하는 것이다.
+단체법을 적용하기 전에 가장 해야할 일은 부등식을 등식으로 바꾸는 표준형(standard form)을 적용하는 것이다. 예를 들어 <span class="math inline">\(2x_1 \leq 50\)</span> 이라면 여유 변수(slack variable) S를 더하여 <span class="math inline">\(2X_1 + S_1 = 50\)</span>으로 만들면 된다.</p>
 <p>가령 미지수가 3개, 조건식이 3개인 변수인 문제가 있다고 가정하고 여유 변수, 즉 미지수가 3개나 더 추가가 될 경우에는 어떻게 해야할까. 일반적으로는 풀 수 없다. 그러나 여유 변수를 <span class="math inline">\(0\)</span>으로 두면 미지수가 줄어들게 된다. 그리고 최초의 <span class="math inline">\(0\)</span>이 아닌 값, 미지수를 기저가능(Basic feasible)해라고 한다.</p>
 <p>기저가능해가 원점<span class="math inline">\((0,0)\)</span>부터 시작한다고 하면 여유변수는 다음과 같을 것이다.</p>
 <p><span class="math inline">\(x_1 + s_1 = 4 \\ 2x_2 + s_2 = 12 \\ 3x_1 + 2x_2 + s_3 = 18 \\ s_1 = 4, s_2 = 12, s_3= 18\)</span></p>
@@ -159,38 +188,54 @@
 <p><span class="math inline">\(Max \; z=2x_1 + x_2 \\ x_1 + 5x_2 \leq 8 \\ 2x_1 + 3x_2 \leq 6 \\ 3x_1 + x_2 \leq 6\)</span></p>
 <p>제약조건을 여유변수를 이용하여 등식으로 바꾼다.</p>
 <p><span class="math inline">\(2x_1 - x_2 - z = 0 \\ x_1 - 5x_2 + s_1 = 8 \\ 2x_1 - 3x_2 + s_2 = 6 \\ 3x_1 + x_2 + s_3 = 6\)</span></p>
-<p><img src="https://i.imgur.com/Fh9jBGR.png" /> <a href="https://www.desmos.com/calculator/xg6ciqxc8e">Desmos Graphing Calculator</a></p>
-<p>원점 <span class="math inline">\((0,0)\)</span>에서 시작하면 초기가능해(혹은 CPS)를 얻을 수 있다. 물론 이 문제에서 원점은 최적값에는 못미치는 값이다. 단체법은 각 단계마다 목적 등식의 계수를 확인한 다음 최대값을 다음 단계의 기준으로 선택한다. 이 과정에서 기저변수를 <span class="math inline">\(z, s_1, s_2, s_3\)</span>로 하여 시작한다. 그런 다음 새로운 기저 변수는 목적 등식에서 가장 큰 계수를 갖는 <span class="math inline">\(x_1\)</span>이다. 변수 <span class="math inline">\(x_1\)</span>이 어떻게 바뀌는지 알아보기 위해 비율 계수를 <span class="math inline">\(a\)</span>, 값을 <span class="math inline">\(b\)</span>인 $  $로 값이 큰 방정식을 선택한다. 앞의 식에서 비율은 각각 <span class="math inline">\(\frac{1}{8}\)</span>, <span class="math inline">\(\frac{2}{6}\)</span>, <span class="math inline">\(\frac{3}{6}\)</span> 이 나오는데 마지막 비율의 값이 가장 크다. 그리고 마지막 비율은 마지막 등식에서 나오므로 <span class="math inline">\(x_1\)</span>으로 치환될 기저 변수는 <span class="math inline">\(s_3\)</span>가 된다. 실제로 이 과정은 가우스 소거법을 사용한다. 마지막 등식을 이용하여 다른 등식에 적절한 수를 곱하여 마지막 등식을 제외한 모든 등식에서 <span class="math inline">\(x_1\)</span>을 제거한다. <span class="math inline">\(x_1\)</span>을 제거하는 과정을 끝내면 다음과 같다. <span class="math inline">\(-z - \frac{2}{3}s_3+ \frac{1}{3}x_2= -4 \\s_1- \frac{1}{3}s_3+ \frac{14}{3}x_2=6 \\ s_2-\frac{2}{3}s_3+\frac{7}{3}x_2=2 \\x_1+\frac{1}{3}s_3+\frac{1}{3}x_2=2\)</span></p>
+<p><img src="https://i.imgur.com/Fh9jBGR.png" />
+<a href="https://www.desmos.com/calculator/xg6ciqxc8e">Desmos Graphing Calculator</a></p>
+<p>원점 <span class="math inline">\((0,0)\)</span>에서 시작하면 초기가능해(혹은 CPS)를 얻을 수 있다. 물론 이 문제에서 원점은 최적값에는 못미치는 값이다. 단체법은 각 단계마다 목적 등식의 계수를 확인한 다음 최대값을 다음 단계의 기준으로 선택한다. 이 과정에서 기저변수를 <span class="math inline">\(z, s_1, s_2, s_3\)</span>로 하여 시작한다. 그런 다음 새로운 기저 변수는 목적 등식에서 가장 큰 계수를 갖는 <span class="math inline">\(x_1\)</span>이다. 변수 <span class="math inline">\(x_1\)</span>이 어떻게 바뀌는지 알아보기 위해 비율 계수를 <span class="math inline">\(a\)</span>, 값을 <span class="math inline">\(b\)</span>인 $  $로 값이 큰 방정식을 선택한다. 앞의 식에서 비율은 각각 <span class="math inline">\(\frac{1}{8}\)</span>, <span class="math inline">\(\frac{2}{6}\)</span>, <span class="math inline">\(\frac{3}{6}\)</span> 이 나오는데 마지막 비율의 값이 가장 크다. 그리고 마지막 비율은 마지막 등식에서 나오므로 <span class="math inline">\(x_1\)</span>으로 치환될 기저 변수는 <span class="math inline">\(s_3\)</span>가 된다. 실제로 이 과정은 가우스 소거법을 사용한다. 마지막 등식을 이용하여 다른 등식에 적절한 수를 곱하여 마지막 등식을 제외한 모든 등식에서 <span class="math inline">\(x_1\)</span>을 제거한다. <span class="math inline">\(x_1\)</span>을 제거하는 과정을 끝내면 다음과 같다.
+<span class="math inline">\(-z - \frac{2}{3}s_3+ \frac{1}{3}x_2= -4 \\s_1- \frac{1}{3}s_3+ \frac{14}{3}x_2=6 \\ s_2-\frac{2}{3}s_3+\frac{7}{3}x_2=2 \\x_1+\frac{1}{3}s_3+\frac{1}{3}x_2=2\)</span></p>
 <p>나머지 비기저변수를 0으로 하면 새로운 기저 변수를 얻을 수 있다. 따라서 비기저변수인 s_3, x_2를 0으로 하면 다음과 같은 값을 얻을 수 있다.</p>
 <p><span class="math inline">\(z=4, s_1=6, s_2=2, x_1 =2\)</span></p>
 <p>앞의 그래프를 보면 <span class="math inline">\((2,0)\)</span>, 즉 극점에 도달한 것을 알 수 있다. 이전 값인 <span class="math inline">\((0,0)\)</span> 보다는 큰 값이다. 그리고 같은 방법을 반복하는데 이번에는 <span class="math inline">\(x_2\)</span>에 가장 큰 계수가 있는지 확인한다. 가장 큰 계수/상수는 두번째 등식의 <span class="math inline">\(\frac{14}{18}\)</span>이다. 따라서 새 기저변수는 두번째 등식에 있는 기저변수 <span class="math inline">\(s_1\)</span>을 치환하는 <span class="math inline">\(x_2\)</span>다. 앞의 과정을 두 번 반복하면 <span class="math inline">\(x_1=\frac{12}{7}\)</span>과 <span class="math inline">\(x_2=\frac{6}{7}\)</span>가 나오면서 <span class="math inline">\(z\)</span>의 최대값인 <span class="math inline">\(\frac{30}{7}\)</span>이 나올것이다. 이는 <span class="math inline">\(4.29\)</span>에 가까운 값이다.</p>
 <p>이번 글에선 목적함수를 최대화하는 방법을 알아보았지만, 목적함수를 최소화하는 문제도 있고 부등식이 무한대인 선형 프로그램도 있다. 단체법이 흥미롭다면 카치안(L. G. Kachian)의 타원체 알고리즘(ellipsoid algorithm)을 공부해보면 좋을것이다.</p>
 </div>
-<div id="reference" class="section level3 unnumbered">
+<div id="reference-1" class="section level3 unnumbered">
 <h3>Reference</h3>
 <ol style="list-style-type: decimal">
 <li>Simplex algorithm <a href="https://en.wikipedia.org/wiki/Simplex_algorithm" class="uri">https://en.wikipedia.org/wiki/Simplex_algorithm</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Dynamic_programming#History">Dynamic programming - Wikipedia</a></li>
 <li><a href="http://lpsolve.sourceforge.net/4.0/LinearProgrammingFAQ.htm">Linear Programming FAQ</a></li>
 </ol>
+
 </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
             </section>
 
           </div>
         </div>
       </div>
-
+<a href="do-you-know-random.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -201,14 +246,25 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://gihub.com/initNirvana/edit/master/%s",
+"link": "https://github.com/initNirvana/edit/master/simplex-method-and-yankees.Rmd",
 "text": "Edit"
 },
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
 "download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "section"
-},
-"search": false
+}
 });
 });
 </script>
@@ -218,9 +274,12 @@ gitbook.start({
   (function () {
     var script = document.createElement("script");
     script.type = "text/javascript";
-    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:" && /^https?:/.test(script.src))
-      script.src  = script.src.replace(/^https?:/, '');
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
     document.getElementsByTagName("head")[0].appendChild(script);
   })();
 </script>
